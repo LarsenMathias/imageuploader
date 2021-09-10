@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-4u&iz-=e1)-o6!qy(r@!c+t&_!vopsn48e7n7cq1fj)d&7e!*p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','memesshare.herokuapp.com']
 
 
 # Application definition
