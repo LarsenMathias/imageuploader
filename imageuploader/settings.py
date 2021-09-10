@@ -130,5 +130,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'staticfiles')) 
-STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'static'), )
+if not os.path.exists(STATIC_ROOT):
+    os.mkdir(STATIC_ROOT)
+# STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'static'), )
 
