@@ -133,4 +133,6 @@ STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'staticfiles'))
 if not os.path.exists(STATIC_ROOT):
     os.mkdir(STATIC_ROOT)
 # STATICFILES_DIRS = ( os.path.join(BASE_DIR, 'static'), )
-
+if 'DATABASE_URL' in os.environ:
+    import dj_database_url
+    DATABASES = {'default': dj_database_url.config()}
