@@ -7,4 +7,3 @@ sqlparse==0.4.1
 django-heroku==0.3.1
 whitenoise==5.2.0
 dj-database-url 
-psycopg2
