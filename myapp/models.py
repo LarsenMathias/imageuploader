@@ -3,7 +3,7 @@ from django.db import models
 
 # Create your models here.
 class Movie(models.Model):
- photo = models.ImageField(upload_to="myimage")
+ photo = models.ImageField(upload_to="myimage/")
  date = models.DateTimeField(auto_now_add=True)
 class Sports(models.Model):
  photo = models.ImageField(upload_to="myimage")
